@@ -1,0 +1,22 @@
+- 路由器風險評估
+    - 對方給予的資料(****osint****)去做判斷：like MAC address、Whois等等
+        - Snmp
+            - 華為的engine id規則
+                
+                ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b1b3c630-9506-4a08-8fc1-6539c7d57418/Untitled.png)
+                
+        - Banner
+            - nmap -sV --script=banner [wp2.lyncustek.com](http://wp2.lyncustek.com/)
+    - 行為特徵判斷：透過我方觀察對方的資料，去做風險判斷，事實上這一部份就類似是在做滲透攻擊的第一步，****偵查對方資訊。Keyword：osint工具****
+        
+        覺得相關的文章，也寫得不錯：[https://ithelp.ithome.com.tw/articles/10214236](https://ithelp.ithome.com.tw/articles/10214236)
+        
+        - 思考風險判斷需要甚麼資料，對於不同廠牌的路由器，對於有風險安全的路由器?
+            - 國家？Port？白黑名單？對方裝置各服務的回傳內容？
+        - 透過Nmap工具
+            - 需要拿到更多的資訊就需要有更侵入性的手段，透過Nmap —script的方式可以拿到更多資料，但具體的資料需求還不確定還要考慮到法律責任問題。
+            - 預設的Nmap可以拿到的資訊為：IP位置、Port 資訊、運行的服務、作業系統評估、
+        - 透過Metasploit
+        - 透過****osint工具****
+    - 進行滲透，嘗試把對方主機打下來，取得更多資訊（x
+        - 會有法律責任問題，不探討
